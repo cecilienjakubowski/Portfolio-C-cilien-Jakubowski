@@ -3,121 +3,251 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Portfolio - Cécilien Jakubowski</title>
-
-  <!-- Connexion avec le CSS -->
+  <title>Cécilien Jakubowski - Portfolio</title>
+  <meta name="description" content="Portfolio de Cécilien Jakubowski, étudiant en école de commerce : finance, gestion et commerce international.">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
 
-  <!-- En-tête -->
-  <header>
-    <nav>
-      <h1>Cécilien Jakubowski</h1>
-      <a href="#contact">Me contacter</a>
-    </nav>
+  <header class="entete">
+    <div class="conteneur entete-contenu">
+      <a class="marque" href="#contenu">Cécilien Jakubowski</a>
+      <nav aria-label="Navigation principale">
+        <ul class="menu">
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#atouts">Atouts</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  
 
-  <main>
-
-    <!-- Présentation -->
-    <section class="presentation">
-      <div>
-        <p class="intro">Étudiant en école de commerce</p>
-
-        <h2>Bonjour, je suis Cécilien.</h2>
-
-        <p>
-          Étudiant en école de commerce, je m'intéresse au marketing,
-          à la gestion de projet et au développement commercial.
-          Curieux et motivé, je souhaite développer mes compétences
-          au sein d'une entreprise.
+  <main id="contenu">
+    <section class="conteneur profil" aria-labelledby="nom">
+      <div class="profil-texte">
+        <h1 id="nom">Cécilien Jakubowski</h1>
+        <p class="role">Étudiant en école de commerce</p>
+        <p class="intro">
+          Je m’intéresse à la finance, à la gestion et au commerce
+          international. Curieux et motivé, je souhaite développer mes
+          compétences au sein d’une entreprise.
         </p>
+        <ul class="domaines" aria-label="Domaines d’intérêt">
+          <li>Finance</li>
+          <li>Gestion</li>
+          <li>Commerce international</li>
+        </ul>
+        <a class="bouton" href="#projets">Voir mes projets</a>
       </div>
-
-      <!-- Photo -->
-      <img src="maphoto.JPG" alt="Photo de Cécilien Jakubowski">
+      <img class="portrait" src="images/portrait.jpg" width="900" height="1200"
+           alt="Portrait de Cécilien Jakubowski en chemise blanche">
     </section>
 
-    <!-- Compétences -->
-    <section>
-      <h2>Mes compétences</h2>
-
-      <div class="competences">
-
-        <article>
-          <h3>Marketing</h3>
-          <p>Compréhension des besoins clients et création de stratégies.</p>
-        </article>
-
-        <article>
-          <h3>Communication</h3>
-          <p>Communication claire à l'écrit comme à l'oral.</p>
-        </article>
-
-        <article>
-          <h3>Travail en équipe</h3>
-          <p>Capacité à collaborer et à participer à des projets collectifs.</p>
-        </article>
-
-        <article>
-          <h3>Organisation</h3>
-          <p>Gestion des priorités et respect des délais.</p>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- Projets -->
-    <section>
-      <h2>Mes projets</h2>
-
-      <div class="projets">
-
-        <article>
-          <h3>Projet marketing</h3>
-          <p>
-            Création d'une stratégie marketing pour développer
-            la visibilité d'une marque auprès de son public cible.
-          </p>
-        </article>
-
-        <article>
-          <h3>Projet entrepreneurial</h3>
-          <p>
-            Travail en groupe autour de la création d'un concept
-            commercial et de son modèle économique.
-          </p>
-        </article>
-
+    <section id="competences" class="bloc" aria-labelledby="titre-competences">
+      <div class="conteneur">
+        <h2 id="titre-competences">Compétences</h2>
+        <ul class="liste-competences">
+          <li class="carte">
+            <h3>Marketing</h3>
+            <p>Comprendre les besoins des clients et construire une stratégie.</p>
+          </li>
+          <li class="carte">
+            <h3>Communication</h3>
+            <p>S’exprimer clairement, à l’écrit comme à l’oral.</p>
+          </li>
+          <li class="carte">
+            <h3>Travail en équipe</h3>
+            <p>Collaborer et contribuer à des projets collectifs.</p>
+          </li>
+          <li class="carte">
+            <h3>Organisation</h3>
+            <p>Gérer les priorités et respecter les délais.</p>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
-      <h2>Me contacter</h2>
+    <section id="projets" class="bloc" aria-labelledby="titre-projets">
+      <div class="conteneur">
+        <h2 id="titre-projets">Projets et expériences</h2>
 
-      <p>
-        Vous souhaitez échanger avec moi concernant une opportunité ?
-      </p>
+        <article class="carte realisation">
+          <div class="realisation-resume">
+            <p class="type">Projet entrepreneurial</p>
+            <h3>Boutique en ligne de manteaux d’hiver</h3>
+            <p class="resume">
+              Lancement et pilotage d’une boutique en ligne spécialisée
+              dans les manteaux d’hiver, de l’étude du marché jusqu’au
+              suivi des commandes.
+            </p>
+          </div>
+          <div class="realisation-details">
+            <h4>Missions</h4>
+            <ul class="missions">
+              <li>Étude du marché et choix de la gamme de produits</li>
+              <li>Sélection des fournisseurs et fixation des prix de vente</li>
+              <li>Suivi des coûts, des marges et de la rentabilité</li>
+              <li>Promotion de la boutique et acquisition de clients en ligne</li>
+              <li>Relation client et suivi des commandes</li>
+            </ul>
+            <h4>Compétences mobilisées</h4>
+            <p class="competences-mobilisees">
+              Gestion de projet, analyse financière, marketing digital,
+              relation fournisseurs, service client.
+            </p>
+          </div>
+          <div class="galerie galerie-boutique">
+            <img src="images/boutique-tableau-de-bord.jpg" width="1600" height="854"
+                 alt="Tableau de bord des ventes de la boutique en ligne">
+            <img src="images/boutique-doudoune.jpg" width="1086" height="1448"
+                 alt="Doudoune noire brillante vendue par la boutique">
+          </div>
+        </article>
 
-      <a class="bouton" href="mailto:prenom.nom@email.com">
-        Envoyer un email
-      </a>
+        <article class="carte realisation">
+          <div class="realisation-resume">
+            <p class="type">Expérience professionnelle</p>
+            <h3>Stage chez BMW, Paris</h3>
+            <p class="resume">
+              Livraison de véhicules à la clientèle parisienne et
+              participation aux rendez-vous de vente aux côtés des
+              conseillers commerciaux.
+            </p>
+          </div>
+          <div class="realisation-details">
+            <h4>Missions</h4>
+            <ul class="missions">
+              <li>Livraison de véhicules et remise des clés aux clients</li>
+              <li>Accueil et accompagnement des clients lors de la livraison</li>
+              <li>Assistance aux conseillers lors des entretiens de vente</li>
+              <li>Découverte du parcours client, du premier contact à la livraison</li>
+            </ul>
+            <h4>Compétences mobilisées</h4>
+            <p class="competences-mobilisees">
+              Relation client, sens du service, rigueur, techniques de vente.
+            </p>
+          </div>
+          <div class="galerie galerie-bmw">
+            <img src="images/bmw-showroom.jpg" width="1600" height="1067"
+                 alt="Bâtiment d’une concession BMW">
+            <img src="images/bmw-vehicules.jpg" width="1008" height="1792"
+                 alt="Véhicules BMW garés sous un auvent">
+          </div>
+        </article>
+      </div>
     </section>
 
+    <section id="atouts" class="bloc" aria-labelledby="titre-atouts">
+      <div class="conteneur">
+        <h2 id="titre-atouts">Atouts</h2>
+        <div class="atouts">
+          <div class="carte">
+            <h3>Qualités</h3>
+            <ul class="liste-qualites">
+              <li>
+                <span class="nom">Rigueur</span>
+                <span class="detail">Précision dans le traitement des chiffres et des dossiers.</span>
+              </li>
+              <li>
+                <span class="nom">Sens du chiffre</span>
+                <span class="detail">À l’aise avec les marges, les budgets et les indicateurs.</span>
+              </li>
+              <li>
+                <span class="nom">Esprit d’analyse</span>
+                <span class="detail">Comparer les options et décider sur des faits.</span>
+              </li>
+              <li>
+                <span class="nom">Négociation</span>
+                <span class="detail">Défendre une offre et trouver un accord équilibré.</span>
+              </li>
+              <li>
+                <span class="nom">Intégrité</span>
+                <span class="detail">Confidentialité et respect des engagements.</span>
+              </li>
+              <li>
+                <span class="nom">Adaptabilité</span>
+                <span class="detail">S’intégrer vite dans une nouvelle équipe ou un nouveau marché.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="carte">
+            <h3>Langues</h3>
+            <ul class="liste-langues">
+              <li>
+                <div>
+                  <span class="langue">Anglais</span>
+                  <span class="detail">Utilisateur indépendant</span>
+                </div>
+                <span class="niveau">B2</span>
+              </li>
+              <li>
+                <div>
+                  <span class="langue">Allemand</span>
+                  <span class="detail">Niveau intermédiaire</span>
+                </div>
+                <span class="niveau">B1</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bloc" aria-labelledby="titre-contact">
+      <div class="conteneur contact">
+        <div class="contact-infos">
+          <h2 id="titre-contact">Contact</h2>
+          <p class="accroche">Une opportunité, un échange ? Écrivez-moi.</p>
+          <dl class="coordonnees">
+            <div>
+              <dt>Téléphone</dt>
+              <dd><a href="tel:+33663600451">06 63 60 04 51</a></dd>
+            </div>
+            <div>
+              <dt>E-mail</dt>
+              <dd><a href="mailto:cecilien.jakubowski@gmail.com">cecilien.jakubowski@gmail.com</a></dd>
+            </div>
+          </dl>
+        </div>
+
+        <form id="formulaire" class="carte formulaire" data-destinataire="cecilien.jakubowski@gmail.com">
+          <div class="champ">
+            <label for="champ-nom">Nom</label>
+            <input id="champ-nom" name="nom" type="text" autocomplete="name" required>
+          </div>
+          <div class="champ">
+            <label for="champ-email">Votre e-mail</label>
+            <input id="champ-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="champ">
+            <label for="champ-objet">Objet</label>
+            <input id="champ-objet" name="objet" type="text" required>
+          </div>
+          <div class="champ">
+            <label for="champ-message">Message</label>
+            <textarea id="champ-message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="bouton" type="submit">Envoyer le message</button>
+          <p class="aide">Votre messagerie s’ouvre avec le message prêt à être envoyé.</p>
+
+          <div id="secours" class="secours" hidden>
+            <p>Rien ne s’est ouvert ? Copiez le message et envoyez-le depuis votre messagerie à l’adresse indiquée ci-dessus.</p>
+            <button id="bouton-copier" class="bouton-secondaire" type="button">Copier le message</button>
+            <p id="confirmation" class="confirmation" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <!-- Pied de page -->
-  <footer>
-    <p>© <span id="annee"></span> Cécilien Jakubowski</p>
+  <footer class="pied">
+    <div class="conteneur">
+      <p>© <span id="annee">2026</span> Cécilien Jakubowski</p>
+    </div>
   </footer>
 
-  <!-- Connexion avec JavaScript -->
   <script src="script.js"></script>
-
 </body>
 </html>
